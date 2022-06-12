@@ -1,0 +1,39 @@
+{
+  "docs": [
+    {
+    "title": "Who does the project works?",
+    "href": "/docs/how-project-works",
+    "description": "You'll discover the main parts of the project, and how it works."
+  },
+    {
+    "title": "The API folder",
+    "href": "/docs/api",
+    "description": "Let's discover how to create the first api endpoint of your next amazing website!"
+  },
+  {
+    "title": "The static folder",
+    "href": "/docs/static",
+    "description": "What is the static folder for? What can I do with it?"
+  },
+    {
+    "title": "The pages folder",
+    "href": "/docs/pages",
+    "description": "There aren't webpages without... pages. So start adding pages to your project!"
+  },
+  {
+    "title": "Analyse the manager directory",
+    "href": "/docs/manager",
+    "description": "A list of all manager's modules, of what they do, with some examples."
+  },
+  {
+    "title": "More",
+    "href": "/docs/more",
+    "description": "Some hints and advices to improve the server."
+  },
+  {
+    "title": "The easter egg",
+    "href": "/docs/easter-egg",
+    "description": "Lorem ipsum dolor sit amet."
+  }
+  ]
+}

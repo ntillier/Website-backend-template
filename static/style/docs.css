@@ -1,0 +1,175 @@
+/*==========
+
+CSS variables
+
+==========*/
+:root {
+  --green: #42f5bc;
+  --blue: #42e3f5;
+  --back: #2C2F33;
+  --color: #fff;
+  --gradient: linear-gradient(90deg, var(--green), var(--blue));
+}
+
+/*==========
+
+Scrollbar styling
+
+==========*/
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	background: var(--gradient);
+}
+::-webkit-scrollbar-track {
+	border-radius: 2px;
+  background: var(--back);
+}
+
+/*==========
+
+Header's style
+
+==========*/
+header {
+  background: 
+    linear-gradient(var(--back), var(--back)) padding-box,
+    var(--gradient) border-box;
+  border: solid 4px transparent;
+  width: 80%;
+  left: 10%;
+  margin: 10px auto;
+  border-radius: 100px;
+  height: 70px;
+  top: 0;
+  text-align: center;
+  user-select: none;
+}
+header a {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 5%;
+  margin: 0 5%;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--green);
+  text-decoration: none;
+  transition: color .1s;
+}
+header a:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 750px) {
+  header {
+    margin: 5px;
+    width: calc(100% - 5px);
+    border-radius: 5px;
+  }
+  header a {
+    padding: 0 5px;
+    margin: 0 5px;
+  }
+}
+
+/*==========
+
+Some CSS for the footer
+
+==========*/
+footer span, footer a {
+  color: var(--color);
+  text-decoration: none;
+  font-weight: bold;
+}
+footer span {
+  display: block;
+  text-align: center;
+  padding: 50px;
+}
+footer a:hover {
+  color: var(--green);
+}
+
+/*==========
+
+Body && article css rules
+
+==========*/
+body {
+  margin: auto;
+  font-family: sans-serif;
+  background: var(--back);
+  overflow-x: hidden;
+}
+* {
+  boz-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+article {
+  display: block;
+  position: relative;
+  top: 10px;
+  width: 50%;
+  min-width: 500px;
+  margin: auto;
+  line-height: 1.6em;
+  padding-bottom: 50px;
+  font-size: 18px;
+  text-align: justify;
+  text-justify: inter-word;
+  color: var(--color);
+}
+article div {
+  font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+  padding: 0.5em 0;
+  margin: 0.5em 0;
+}
+article *:not(pre) code {
+  background: #23272A;
+  color: #ffb703;
+  padding: 2px 3px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+article pre {
+  padding: 5px 10px;
+  margin: 20px 5px;
+}
+article pre code {
+  border: solid 2px #97A9B4;
+}
+article blockquote {
+  padding: 10px;
+  background: 
+    linear-gradient(var(--back), var(--back)) padding-box,
+    var(--gradient) border-box;
+  border: solid 2px transparent;
+  border-radius: 5px;
+  margin: 20px 5px;
+}
+article hr {
+  border: solid 2px transparent;
+  margin: 5px 0;
+}
+article a {
+  color: var(--blue);
+  text-decoration: none;
+}
+article a:hover {
+  text-decoration: underline;
+}
+article ul {
+  margin: 5px 10px;
+  padding: 0 10px;
+}
